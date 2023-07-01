@@ -165,25 +165,38 @@ function pausePlayer() {
 
 
 function sendPush() {
-	let push = {
-		"active": "true",
-		"type": "note",
-		"title": "HELP",
-		"body": "Shit is hitting Rebecca's fan!",
-		"email": "malikudit09@gmail.com"
-	}
-
-	let headers = {
-		'Content-Type': 'application/json'
-	}
-	$.ajax({
-		url: "https://api.pushbullet.com/v2/pushes",
-		data: JSON.stringify(push),
-		type: "POST",
-		beforeSend: function (xhr) { xhr.setRequestHeader('Access-Token', 'o.r2DXFy67nyONvS7IWnH4vdFk2Tsy4Xrb').setRequestHeader('Content-Type', 'application/json'); },
-		success: function () { alert("I've been notified darling, will call as soon as I can! Kisses"); }
+	var accessToken = 'o.r2DXFy67nyONvS7IWnH4vdFk2Tsy4Xrb';
+	var deviceName = 'Firefox';
+	var notificationTitle = 'Rebecca\'s shit has hit the fan!';
+	var notificationBody = 'Call her now.';
+  
+	var url = 'https://api.pushbullet.com/v2/pushes';
+	var params = {
+	  type: 'note',
+	  device_name: deviceName,
+	  title: notificationTitle,
+	  body: notificationBody
+	};
+  
+	fetch(url, {
+	  method: 'POST',
+	  headers: {
+		'Content-Type': 'application/json',
+		'Access-Token': accessToken
+	  },
+	  body: JSON.stringify(params)
+	})
+	.then(response => {
+	  if (response.ok) {
+		console.log('Notification sent successfully!');
+	  } else {
+		console.error('Error sending notification:', response.status, response.statusText);
+	  }
+	})
+	.catch(error => {
+	  console.error('Error sending notification:', error);
 	});
-}
+  }
 
 
 function cleanName(name) {
