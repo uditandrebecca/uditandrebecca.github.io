@@ -25,7 +25,9 @@ let songs = ["Portishead - Undenied.mp3",
 	"Wilco - I-'m the Man Who Loves You.mp3",
 	"Beirut - Scenic World.mp3",
 	"Wilco - Reservations.mp3",
-	"Marina - Froot.mp3"];
+	"Marina - Froot.mp3",
+	"Jeff Tweedy - I-'m Always In Love",
+	"Jeff Tweedy - Dawned On Me"];
 
 let funnies = ["You mean the world to me - you're the girl of my dreams.",
 	"Let's say, hypothetically, that we were married. It's fair to assume that in this case, we would be husband and wife. Now would it also be reasonable to assume that I will keep you happy until the end of time? Answer that, liberal.",
