@@ -169,8 +169,8 @@ function sendPush() {
 		"active": "true",
 		"type": "note",
 		"title": "HELP",
-		"body": "Shit is hitting Erins fan!",
-		"email": "udit4880@gmail.com"
+		"body": "Shit is hitting Rebecca's fan!",
+		"email": "malikudit09@gmail.com"
 	}
 
 	let headers = {
