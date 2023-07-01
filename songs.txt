@@ -1,0 +1,17 @@
+"Wilco - Jesus, Etc..mp3",
+"Weezer - Zombie Bastards.mp3",
+"Portishead - Undenied.mp3",
+"Wilco - California Stars.mp3",
+"Weezer - Jacked Up.mp3",
+"Wilco - Reservations.mp3",
+"Marina - Teen Idle.mp3",
+"Wilco - Handshake Drugs.mp3",
+"Golden Smog - Pecan Pie.mp3",
+"Black Country, New Road - Across The Pond Friend.mp3",
+"Uncle Tupelo - New Madrid.mp3",
+"Beirut - Scenic World.mp3",
+"Moby - Natural Blues.mp3",
+"Wilco - I-'ll Fight.mp3",
+"Marina - Froot.mp3",
+"Wilco - I-'m the Man Who Loves You.mp3"
+
